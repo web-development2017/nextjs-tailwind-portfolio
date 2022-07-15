@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-
+import Projects from '../components/Projects'
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
@@ -11,16 +11,18 @@ const Home: NextPage = () => {
       </Head>
 
       {/* <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center"> */}
-      <main className="p-10 mx-auto max-w-4xl">
-        <h1 className="text-3xl font-bold md:text-5xl tracking-tight">
+      <main className="p-10 mx-auto max-w-2xl">
+        <h1 className="text-3xl font-bold md:text-5xl tracking-tight mb-16">
           Richard Taylor
         </h1>
 
-        <h2 className="mt-3">
-          Welcome to my portfolio
-        </h2>
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+          Projects
+        </h3>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-between sm:w-full">
+        <Projects />
+
+        {/* <div className="mt-6 flex max-w-2xl flex-wrap items-center justify-between sm:w-full">
           <a
             href="https://nextjs.org/docs"
             className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
@@ -60,7 +62,7 @@ const Home: NextPage = () => {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
